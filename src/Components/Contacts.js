@@ -15,41 +15,11 @@ const Contacts = () => {
   const currentContact = contacts.find(
     (contact) => contact.id === parseInt(id)
   );
-    // .find(contact => contact.id === parseInt(id)));
   const [name, setName] = useState(currentContact ? currentContact.name : '');
   const [email, setEmail] = useState(currentContact ? currentContact.email : '');
   const [number, setNumber] = useState(currentContact ? currentContact.number : '');
   const contactToEdit = currentContact ? true : false;
-  // console.log(contactToEdit)
-  // console.log(currentContact)
   const onSubmit = data => {
-    // const checkEmail = contacts.find(
-    //   (contact) =>
-    //     (contact.email === email && contact) ||
-    //     (contact.id !== parseInt(id) && contact.email === email)
-    // )
-    //   ? true
-    //   : false;
-    // console.log(data)
-    // const checkNumber = contacts.find(
-    //   (contact) =>
-    //     contact.number === parseInt(number) ||
-    //     (contact.id !== parseInt(id) && contact.number === parseInt(number))
-    // )
-    //   ? true
-    //   : false;
-
-    // if (!email || !number || !name) {
-    //   return toast.warning("please fill in all field !");
-    // }
-
-    // if (checkEmail) {
-    //   return toast.error("This email is already existing");
-    // }
-
-    // if (checkNumber) {
-    //   return toast.error("This Number is already existing");
-    // }
 
     const user = id
     ? {
